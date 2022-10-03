@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Lifetorium</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&family=Strait&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #52CAC2;">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img src="./image/logo.png" height="80px">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3 mb-2">
+                <a class="nav-link btn btn-lg rounded-pill btn-dark text-white" style="width: 250px;" href="#">About Us</a>
+                </li>
+                <li class="nav-item my-auto">
+                <a class="nav-link border-5 border-white btn btn-lg rounded-pill btn-dark text-white" style="width: 250px;" href="./generate.html">Generate Plan</a>
+                </li>
+            </ul>
+            <div class="ms-auto mb-lg-0 mb-2 row">
+                <div class="col text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./image/profile-male.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a id="profileLink" href="./profile.html" class="link-dark fw-bold">Profile</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center my-3 mx-3">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card rounded-5" style="background-color: #283035; border-radius: 10%">
+                        <div class="d-flex flex-row align-items-right">
+                            <h1 class="text-center text-white mx-auto" style="font-family: 'Stick No Bills', sans-serif; 
+                            padding-left: 100px; padding-right: 30px; padding-top: 50px; text-decoration: underline;
+                            font-size: 40px;">YOUR DAILY WORKOUT PROGRESS</h1>
+                            <a href="./plan.html">
+                                <img class="mt-3" style="margin-right: 20px;" width="50px" height="50px" src="./image/exit.png">
+                            </a>
+                        </div>
+                        <div class="row mx-3 p-3 mt-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Leg Lift</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">2 x 5</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="leglift" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Push Up</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">2 x 10</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="pushup" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Sit Up</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">2 x 10</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="situp" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Plank</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">1 x 30 second</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="plank" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Step by Step</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">1 x 10</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="stepbystep" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Jumping Jack</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">2 x 10</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="jumpingjack" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Squat</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">2 x 15</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="squat" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="row mx-3 p-3" style="margin-bottom: 30px;">
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">Walking</h4>
+                            </div>
+                            <div class="col-5">
+                                <h4 class="fw-bold text-left text-white">1 x 5 minute</h4>
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" id="walking" class="form-check-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark p-2" style="margin-top: 50px;">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <img src="./image/logo-inverted.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col"><h3 class="text-white">Contact Us</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"><img src="./image/mipmap/Call.png"></div>
+                            <div class="col-9">
+                                <div class="row"><small class="text-white fw-bold">Phone Number :</small></div>
+                                <div class="row"><p class="text-white fw-bold">+62 812-1234-5678</p></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"><img src="./image/mipmap/Mail.png"></div>
+                            <div class="col-9">
+                                <div class="row"><small class="text-white fw-bold">Email Address :</small></div>
+                                <div class="row"><p class="text-white fw-bold">Lifetorium_business@gmail.com</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-lg-1">
+                        <div style="
+                        border-left: 2px solid white;
+                        height: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col"><h3 class="text-white">Follow Us</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/Facebook.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;Lifetorium</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/Insta.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;@Lifetorium</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/LinkedIn.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;Lifetorium</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/Tweeter.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;@Lifetorium</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function() {
+                if(window.localStorage.getItem('userActive') == null) {
+                    window.location.href = "./login.html";
+                } else {
+                    let userActive = JSON.parse(window.localStorage.getItem('userActive'));
+                    $("#profileLink").text(userActive.name);
+                }
+                if(window.localStorage.getItem('progress') != null) {
+                    let checkedItems = JSON.parse(window.localStorage.getItem('progress'));
+                    checkedItems.forEach(element => {
+                        $(`#${element}`).prop('checked', true);
+                    });
+                }
+            });
+            $(".form-check-input").change(function() {
+                var checkedItems = []
+                if(window.localStorage.getItem('progress') != null)
+                    checkedItems = JSON.parse(window.localStorage.getItem('progress'))
+                if(this.checked) {
+                    checkedItems.push(this.id);
+                } else {
+                    checkedItems.splice(checkedItems.indexOf(this.id), 1);
+                }
+                window.localStorage.setItem('progress', JSON.stringify(checkedItems));
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Lifetorium</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&family=Strait&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./css/custom-checkbox.css">
+    </head>
+    <body>
+        
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #52CAC2;">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img src="./image/logo.png" height="80px">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3 my-auto mb-2 mb-lg-0">
+                <a class="nav-link btn btn-lg rounded-pill btn-dark text-white" style="width: 250px;" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item my-auto">
+                <a class="nav-link btn btn-lg rounded-pill btn-dark text-white" style="width: 250px;" href="./generate.html">Generate Plan</a>
+                </li>
+            </ul>
+            <div class="ms-auto mb-lg-0 mb-2 row">
+                <div class="col text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./image/profile-male.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a id="profileLink" href="./profile.html" class="link-dark fw-bold">Profile</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+
+
+        <div class="container-fluid">
+            <div class="row mt-3 justify-content-center">
+                <div class="col-12 m-2 text-center">
+                    <div class="d-flex mx-3">
+                        <a href="./profile.html">
+                            <img src="./image/arrow-left.png" width="50px">
+                        </a>
+                        <h1 class="text-center mx-auto" style="font-family: 'Stick No Bills', sans-serif; 
+                        padding-left: 30px; padding-right: 80px;
+                        font-size: 80px;">MEDICAL TRACK</h1>
+                    </div>
+                    <h4 style="font-family: 'Stick No Bills', sans-serif; 
+                    font-size: 40px;">PLEASE CHOOSE THE MEDICAL ISSUES YOU CURRENTLY HAVE</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4 mx-2">
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="tuberculosis">
+                        <label class="form-check-label" for="tuberculosis" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">TUBERCULOSIS</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="asthma">
+                        <label class="form-check-label" for="asthma" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">ASTHMA</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="osteoporosis">
+                        <label class="form-check-label" for="asthma" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">OSTEOPOROSIS</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="cardiovascular">
+                        <label class="form-check-label" for="cardiovascular" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">CARDIOVASCULAR</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="bonetumour">
+                        <label class="form-check-label" for="bonetumour" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">BONE TUMOUR</label>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 mx-2">
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="arrhytmia">
+                        <label class="form-check-label" for="arrhytmi" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">ARRHYTMIA</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="lungcancer">
+                        <label class="form-check-label" for="lungcancer" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">LUNG CANCER</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="osteomielitis">
+                        <label class="form-check-label" for="osteomielitis" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">OSTEOMIELITIS</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="covid-19">
+                        <label class="form-check-label" for="covid-19" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">COVID-19</label>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                        <input type="checkbox" class="form-check-input my-auto me-2" id="bronchitis">
+                        <label class="form-check-label" for="bronchitis" style="font-family: 'Stick No Bills', sans-serif; 
+                        font-size: 30px;">BRONCHITIS</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark p-2" style="margin-top: 50px;">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <img src="./image/logo-inverted.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col"><h3 class="text-white">Contact Us</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"><img src="./image/mipmap/Call.png"></div>
+                            <div class="col-9">
+                                <div class="row"><small class="text-white fw-bold">Phone Number :</small></div>
+                                <div class="row"><p class="text-white fw-bold">+62 812-1234-5678</p></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"><img src="./image/mipmap/Mail.png"></div>
+                            <div class="col-9">
+                                <div class="row"><small class="text-white fw-bold">Email Address :</small></div>
+                                <div class="row"><p class="text-white fw-bold">Lifetorium_business@gmail.com</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-lg-1">
+                        <div style="
+                        border-left: 2px solid white;
+                        height: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col"><h3 class="text-white">Follow Us</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/Facebook.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;Lifetorium</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/Insta.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;@Lifetorium</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/LinkedIn.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;Lifetorium</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><img src="./image/mipmap/Tweeter.png"></div>
+                                    <div class="col text-white fw-bold">&nbsp;@Lifetorium</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function() {
+                if(window.localStorage.getItem('userActive') == null) {
+                    window.location.href = "./login.html";
+                } else {
+                    let userActive = JSON.parse(window.localStorage.getItem('userActive'));
+                    $("#profileLink").text(userActive.name);
+                }
+                if(window.localStorage.getItem('medical') != null) {
+                    let checkedItems = JSON.parse(window.localStorage.getItem('medical'));
+                    checkedItems.forEach(element => {
+                        $(`#${element}`).prop('checked', true);
+                    });
+                }
+            });
+            $(".form-check-input").change(function() {
+                var checkedItems = []
+                if(window.localStorage.getItem('medical') != null)
+                    checkedItems = JSON.parse(window.localStorage.getItem('medical'))
+                if(this.checked) {
+                    checkedItems.push(this.id);
+                } else {
+                    checkedItems.splice(checkedItems.indexOf(this.id), 1);
+                }
+                window.localStorage.setItem('medical', JSON.stringify(checkedItems));
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
